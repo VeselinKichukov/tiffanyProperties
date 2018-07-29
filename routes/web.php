@@ -19,3 +19,14 @@ Route::get('/hello', function () {
     return view('hello');
 });
 
+Route::get('/appartments', function() {
+  return view('appartments');
+});
+
+Route::get('/checkin', function() {
+  return view('checkin');
+});
+
+Route::get('/contacts', function() {
+  return view('contacts');
+});
