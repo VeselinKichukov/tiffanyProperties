@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello', function () {
+Route::get('/home', function () {
     return view('hello');
 });
 
@@ -30,21 +30,21 @@ Route::get('/checkin', function() {
   return view('checkin');
 });
 
-// Route::get('/contacts', function() {
-//   Mail::to('danvelev9@gmail.com')->send(new ContactsFormMail);
-//
-//   return view('emails.contact');
-//
-// });
-
-// Route::get('/contacts', function() {
-//   return view('contacts');
-// });
-
 Route::get('/contacts', 'ContactController@show');
 Route::post('/contacts', 'ContactController@mailToAdmin');
 
-//
-// Route::get('/contacts', function() {
-//   return view('contacts');
-// });
+Route::get('/vlas', function() {
+  return view('vlas');
+});
+
+Route::get('/primorsko', function() {
+  return view('primorsko');
+});
+
+Route::get('/pomorie', function() {
+  return view('pomorie');
+});
+
+Route::get('/sinemorets', function() {
+  return view('sinemorets');
+});

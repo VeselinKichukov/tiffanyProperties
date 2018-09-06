@@ -19,7 +19,7 @@
     <script src="js/FF-cash.js"></script>
     <script>
 		$(document).ready(function(){
-			$('.form-1').jqTransform();
+			$('.form-1').jqTransform();					   	
 			$('.slider')._TMS({
 				show:0,
 				pauseOnHover:true,
@@ -35,7 +35,7 @@
 				banners:false,
 				waitBannerAnimation:false,
 				progressBar:false
-			})
+			})		
 		});
 	</script>
 	<!--[if lt IE 8]>
@@ -55,39 +55,41 @@
 <!--==============================header=================================-->
 <header>
     <div>
-        <h1><a href="index.html"><img src="images/logo.jpg" alt=""></a></h1>
+        <h1><a href="index.html"><img src="assest/images/logo.jpg" alt=""></a></h1>
         <div class="social-icons">
-            <span>Like Us:</span>
-
+            <span>Follow Us:</span>
+            
             <a href="index_bg.html" class="language"></a>
 
             <a href="#" class="icon-3"></a>
             <a href="#" class="icon-2"></a>
             <a href="#" class="icon-1"></a>
         </div>
-        <div id="slide">
+        <div id="slide">		
             <div class="slider">
                 <ul class="items">
                     <li><img src="images/slider_sinemorec_1.jpg" alt="" /></li>
                     <li><img src="images/slider_sinemorec_2.jpg" alt="" /></li>
                     <li><img src="images/slider_sinemorec_3.jpg" alt="" /></li>
                 </ul>
-            </div>
+            </div>	
             <a href="#" class="prev"></a><a href="#" class="next"></a>
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="/home">Home</a></li>
-                <li class="current"><a href="/appartments">Apartments</a></li>
-                <li><a href="/checkin">Checkin Procedure</a></li>
-                <li><a href="/contacts">Contacts</a></li>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="buying.html">Buying</a></li> -->
+                <li class="current"><a href="appartments.html">Apartments</a></li>
+                <!-- <li><a href="renting.html">Renting</a></li> -->
+                <li><a href="checkin.html">Checkin Procedure</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
             </ul>
         </nav>
     </div>
-</header>
+</header>   
 <!--==============================content================================-->
 <section id="content">
-    <div class="container_12">
+    <div class="container_12">	
       <div class="grid_8">
         <h2 class="top-1 p3">Home value estimator</h2>
         <div class="wrap">
@@ -109,15 +111,50 @@
         </div>
         <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
       </div>
+      <div class="grid_4">
+        <div class="left-1">
+            <h2 class="top-1 p3">Find your home</h2>
+            <form id="form-1" class="form-1 bot-2">
+                <div class="select-1">
+                    <label>Home type</label>
+                    <select name="select" >
+                        <option>Homes for sale</option>
+                    </select>   
+                </div>
+                <div>
+                    <label>Location</label>
+                    <input type="text" value="Address, City, Zip" onBlur="if(this.value=='') this.value='Address, City, Zip'" onFocus="if(this.value =='Address, City, Zip' ) this.value=''"  />
+                </div>
+                <div class="select-2">
+                    <label>Beds</label>
+                    <select name="select" >
+                        <option>&nbsp;</option>
+                    </select>   
+                </div>
+                <div class="select-2 last">
+                    <label>Baths</label>
+                    <select name="select" >
+                        <option>&nbsp;</option>
+                    </select>   
+                </div> 
+                <a onClick="document.getElementById('form-1').submit()" class="button">Search</a>
+                <div class="clear"></div>
+            </form>
+            <h2 class="p3">Find sales</h2>
+            <p class="color-1 p6"><strong>Nullam a velit felis, eget luctus elitnlla augue lorem</strong></p>
+            <p class="p2">Sodales et pharetra et, porttitor vel leo. Phasellus at mi nec sem sodales egestas suscipit rhoncus, lacus ligula tristique risus eros habitasse platea enim.</p>
+            <p>Vitae suscipit quam leo non leo. Donec in metus libero, quis faucibus purus. Duis sit amet risus eros. In hac habitasse platea dictums donec tellus.</p>
+        </div>
+      </div>
       <div class="clear"></div>
-    </div>
-</section>
-</div>
+    </div>  
+</section> 
+</div>    
 <!--==============================footer=================================-->
     <footer>
         <p>© 2012 Real Estate</p>
         <p>Website Template by <a href="http://www.templatemonster.com/" target="_blank" rel="nofollow">www.templatemonster</a></p>
-    </footer>
+    </footer>	    
 <script>
 	Cufon.now();
 </script>
