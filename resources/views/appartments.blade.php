@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Selling</title>
+    <title>Appartments</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
@@ -57,7 +57,7 @@
     <div>
         <h1><a href="index.html"><img src="images/logo.jpg" alt=""></a></h1>
         <div class="social-icons">
-            <span>Follow Us:</span>
+            <span>Like Us:</span>
 
             <a href="index_bg.html" class="language"></a>
 
@@ -77,12 +77,10 @@
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <!-- <li><a href="buying.html">Buying</a></li> -->
-                <li class="current"><a href="appartments.html">Apartments</a></li>
-                <!-- <li><a href="renting.html">Renting</a></li> -->
-                <li><a href="checkin.html">Checkin Procedure</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="/home">Home</a></li>
+                <li class="current"><a href="/appartments">Apartments</a></li>
+                <li><a href="/checkin">Checkin Procedure</a></li>
+                <li><a href="/contacts">Contacts</a></li>
             </ul>
         </nav>
     </div>
@@ -111,40 +109,6 @@
         </div>
         <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
       </div>
-      <!-- <div class="grid_4">
-        <div class="left-1">
-            <h2 class="top-1 p3">Find your home</h2>
-            <form id="form-1" class="form-1 bot-2">
-                <div class="select-1">
-                    <label>Home type</label>
-                    <select name="select" >
-                        <option>Homes for sale</option>
-                    </select>
-                </div>
-                <div>
-                    <label>Location</label>
-                    <input type="text" value="Address, City, Zip" onBlur="if(this.value=='') this.value='Address, City, Zip'" onFocus="if(this.value =='Address, City, Zip' ) this.value=''"  />
-                </div>
-                <div class="select-2">
-                    <label>Beds</label>
-                    <select name="select" >
-                        <option>&nbsp;</option>
-                    </select>
-                </div>
-                    <label>Baths</label>
-                    <select name="select" >
-                        <option>&nbsp;</option>
-                    </select>
-                </div>
-                <a onClick="document.getElementById('form-1').submit()" class="button">Search</a>
-                <div class="clear"></div>
-            </form>
-            <h2 class="p3">Find sales</h2>
-            <p class="color-1 p6"><strong>Nullam a velit felis, eget luctus elitnlla augue lorem</strong></p>
-            <p class="p2">Sodales et pharetra et, porttitor vel leo. Phasellus at mi nec sem sodales egestas suscipit rhoncus, lacus ligula tristique risus eros habitasse platea enim.</p>
-            <p>Vitae suscipit quam leo non leo. Donec in metus libero, quis faucibus purus. Duis sit amet risus eros. In hac habitasse platea dictums donec tellus.</p>
-        </div>
-      </div> -->
       <div class="clear"></div>
     </div>
 </section>

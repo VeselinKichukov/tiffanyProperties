@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello', function () {
+Route::get('/home', function () {
     return view('hello');
 });
 
@@ -29,4 +29,20 @@ Route::get('/checkin', function() {
 
 Route::get('/contacts', function() {
   return view('contacts');
+});
+
+Route::get('/vlas', function() {
+  return view('vlas');
+});
+
+Route::get('/primorsko', function() {
+  return view('primorsko');
+});
+
+Route::get('/pomorie', function() {
+  return view('pomorie');
+});
+
+Route::get('/sinemorets', function() {
+  return view('sinemorets');
 });
