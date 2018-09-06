@@ -1,22 +1,40 @@
+@include('alert::bootstrap')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Contacts</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/slider-2.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/jqtransform.css">
-    <script src="js/jquery-1.7.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/cufon-yui.js"></script>
-    <script src="js/vegur_400.font.js"></script>
-    <script src="js/Vegur_bold_700.font.js"></script>
-    <script src="js/cufon-replace.js"></script>
-    <script src="js/tms-0.4.x.js"></script>
-    <script src="js/jquery.jqtransform.js"></script>
-    <script src="js/FF-cash.js"></script>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/slider-2.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/jqtransform.css">
+  <!-- <script src="js/jquery-1.7.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/cufon-yui.js"></script>
+  <script src="js/vegur_400.font.js"></script>
+  <script src="js/Vegur_bold_700.font.js"></script>
+  <script src="js/cufon-replace.js"></script>
+  <script src="js/tms-0.4.x.js"></script>
+  <script src="js/jquery.jqtransform.js"></script>
+  <script src="js/FF-cash.js"></script> -->
+
+<?php
+  {{ URL::asset( 'js/jquery-1.7.min.js'); }}
+  {{ URL::asset( 'js/jquery.easing.1.3.js'); }}
+  {{ URL::asset( 'js/cufon-yui.js'); }}
+      {{ URL::asset( 'js/vegur_400.font.js'); }}
+          {{ URL::asset( 'js/Vegur_bold_700.font.js'); }}
+              {{ URL::asset( 'js/cufon-replace.js'); }}
+                  {{ URL::asset( 'js/tms-0.4.x.js'); }}
+                      {{ URL::asset( 'js/jquery.jqtransform.js'); }}
+                          {{ URL::asset( '"js/FF-cash.js'); }}
+?>
+
+
+
     <script>
 		$(document).ready(function(){
 			$('.form-1').jqTransform();
@@ -55,7 +73,7 @@
 <!--==============================header=================================-->
 <header>
     <div>
-        <h1><a href="index.html"><img src="images/logo.jpg" alt=""></a></h1>
+        <h1><a href="home"><img src="{{ URL::asset(images/logo.jpg)" alt=""></a></h1>
         <div class="social-icons">
             <span>Follow Us:</span>
 
@@ -92,12 +110,18 @@
     <div class="container_12">
       <div class="grid_8">
         <h2 class="top-1 p3">Contact form</h2>
-        <form id="form" method="post" >
+        <form id="form" method="post" action='/contacts'>
           <fieldset>
-            <label><strong>Your Name:</strong><input type="text" value=""></label>
-            <label><strong>Your E-mail:</strong><input type="text" value=""></label>
-            <label><strong>Your Message:</strong><textarea></textarea></label>
-            <div class="btns"><a href="#" class="button">Clear</a><a href="#" class="button" onClick="document.getElementById('form').submit()">Send</a></div>
+            <label><strong>Your Name:</strong>
+              <input type="text" id='name' name='name' placeholder="Your names here..." required>
+            </label>
+            <label><strong>Your E-mail:</strong>
+              <input type="text" id='email' name='email' placeholder="john.doe@example.com" required>
+            </label>
+            <label><strong>Your Message:</strong>
+              <textarea id='message' name='message' placeholder="Your message here." required></textarea>
+            </label>
+            <div class="btns"><a href="#" class="button">Clear</a><input type="submit" class="btn btn-primary" value="Send" /></div>
           </fieldset>
         </form>
       </div>
@@ -105,7 +129,8 @@
         <div class="left-1">
             <h2 class="top-1 p3">Find your home</h2>
             <form id="form-1" class="form-1 bot-2">
-                <div class="select-1">
+              <iframe src="https://www.google.com/maps/d/embed?mid=1oJ17SU74HU56Dh-d3cjfNHnIYN7UVQ7k&hl=en" width="310px" height="240px"></iframe>
+                <!-- <div class="select-1">
                     <label>Home type</label>
                     <select name="select" >
                         <option>Homes for sale</option>
@@ -128,7 +153,7 @@
                     </select>
                 </div>
                 <a onClick="document.getElementById('form-1').submit()" class="button">Search</a>
-                <div class="clear"></div>
+                <div class="clear"></div> -->
             </form>
             <h2 class="p3">Our contacts</h2>
             <dl>
@@ -148,8 +173,8 @@
         <p>© 2012 Real Estate</p>
         <p>Website Template by <a href="http://www.templatemonster.com/" target="_blank" rel="nofollow">www.templatemonster</a></p>
     </footer>
-<script>
+<!-- <script>
 	Cufon.now();
-</script>
+</script> -->
 </body>
 </html>

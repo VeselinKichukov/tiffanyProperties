@@ -1,5 +1,8 @@
 <?php
 
+use app\Https\Controllers\ContactController;
+
+use App\Mail\ContactsFormMail;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,6 +30,21 @@ Route::get('/checkin', function() {
   return view('checkin');
 });
 
-Route::get('/contacts', function() {
-  return view('contacts');
-});
+// Route::get('/contacts', function() {
+//   Mail::to('danvelev9@gmail.com')->send(new ContactsFormMail);
+//
+//   return view('emails.contact');
+//
+// });
+
+// Route::get('/contacts', function() {
+//   return view('contacts');
+// });
+
+Route::get('/contacts', 'ContactController@show');
+Route::post('/contacts', 'ContactController@mailToAdmin');
+
+//
+// Route::get('/contacts', function() {
+//   return view('contacts');
+// });

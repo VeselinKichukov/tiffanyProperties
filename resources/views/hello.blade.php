@@ -3,12 +3,12 @@
 <head>
     <title>Main</title>
     <meta charset="utf-8">
-    
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/jqtransform.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jqtransform.css"> -->
 
 <?php
     {{ URL::asset('css/reset.css'); }}
@@ -45,7 +45,7 @@
     <script src="js/FF-cash.js"></script> -->
     <script>
 		$(document).ready(function(){
-			$('.form-1').jqTransform();					   	
+			$('.form-1').jqTransform();
 			$('.slider')._TMS({
 				show:0,
 				pauseOnHover:true,
@@ -61,7 +61,7 @@
 				banners:false,
 				waitBannerAnimation:false,
 				progressBar:false
-			})		
+			})
 		});
 	</script>
 	<!--[if lt IE 8]>
@@ -86,22 +86,22 @@
             <span>Like Us:</span>
 
             <a href="index_bg.html" class="language"></a>
-            
+
             <a href="#" class="icon-3"></a>
             <a href="#" class="icon-2"></a>
             <a href="#" class="icon-1"></a>
-            
+
             <!-- <li>some stupid comment</li> -->
 
         </div>
-        <div id="slide">		
+        <div id="slide">
             <div class="slider">
                 <ul class="items">
                     <li><img src="images/slider_sinemorec_1.jpg" alt="" /></li>
                     <li><img src="images/slider_sinemorec_2.jpg" alt="" /></li>
                     <li><img src="images/slider_sinemorec_3.jpg" alt="" /></li>
                 </ul>
-            </div>	
+            </div>
             <a href="#" class="prev"></a><a href="#" class="next"></a>
         </div>
         <nav>
@@ -115,10 +115,10 @@
             </ul>
         </nav>
     </div>
-</header>   
+</header>
 <!--==============================content================================-->
 <section id="content">
-    <div class="container_12">	
+    <div class="container_12">
       <div class="grid_8">
         <h2 class="top-1 p3">Welcome message!</h2>
         <p class="p2">Real Estate is one of the best THINGS <a href="http://blog.templatemonster.com/free-website-templates/" target="_blank" class="link">free website templates</a> created by TemplateMonster.com team. This website template is optimized for 1280X1024 screen resolution. It is also XHTML &amp; CSS valid.</p>
@@ -153,7 +153,7 @@
                     <label>Home type</label>
                     <select name="select" >
                         <option>Homes for sale</option>
-                    </select>   
+                    </select>
                 </div>
                 <div>
                     <label>Location</label>
@@ -163,14 +163,14 @@
                     <label>Beds</label>
                     <select name="select" >
                         <option>&nbsp;</option>
-                    </select>   
+                    </select>
                 </div>
                 <div class="select-2 last">
                     <label>Baths</label>
                     <select name="select" >
                         <option>&nbsp;</option>
-                    </select>   
-                </div> 
+                    </select>
+                </div>
                 <a onClick="document.getElementById('form-1').submit()" class="button">Search</a>
                 <div class="clear"></div>
             </form>
@@ -191,14 +191,14 @@
         </div>
       </div>
       <div class="clear"></div>
-    </div>  
-</section> 
-</div>    
+    </div>
+</section>
+</div>
 <!--==============================footer=================================-->
     <footer>
         <p>© 2018 Motiv8</p>
         <p>Created with love(should be an icon) by Motiv8(sholud be alink to future website)</p>
-    </footer>	    
+    </footer>
 <script>
 	Cufon.now();
 </script>

@@ -79,7 +79,7 @@
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <!-- <li><a href="buying.html">Buying</a></li> -->
-                <li class="current"><a href="appartments.html">Apartments</a></li>
+                <li class="current"><a href="/appartments">Apartments</a></li>
                 <!-- <li><a href="renting.html">Renting</a></li> -->
                 <li><a href="checkin.html">Checkin Procedure</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
