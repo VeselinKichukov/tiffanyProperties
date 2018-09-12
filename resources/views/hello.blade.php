@@ -120,7 +120,7 @@
     <div class="container_12">	
       <div class="grid_8">
         <h2 class="top-1 p3">Welcome message!</h2>
-        <p class="p2">Real Estate is one of the best THINGS <a href="http://blog.templatemonster.com/free-website-templates/" target="_blank" class="link">free website templates</a> created by TemplateMonster.com team. This website template is optimized for 1280X1024 screen resolution. It is also XHTML &amp; CSS valid.</p>
+        <p class="p2">{{ __('messages.welcome') }} <a href="http://blog.templatemonster.com/free-website-templates/" target="_blank" class="link">free website templates</a> created by TemplateMonster.com team. This website template is optimized for 1280X1024 screen resolution. It is also XHTML &amp; CSS valid.</p>
         <p class="line-1">Download the basic package of this <a class="link" href="http://blog.templatemonster.com/2012/04/09/free-website-template-real-estate-justslider/" target="_blank" rel="nofollow">Real Estate Template</a> (without PSD source) that is available for anyone without registration. If you need PSD source files, please go to the template download page at TemplateMonster to leave the e-mail address that you want the free template ZIP package to be delivered to.</p>
         <h2 class="p4">Buyers. Sellers. Proprietors. Agents.</h2>
         <div class="wrap block-1">
