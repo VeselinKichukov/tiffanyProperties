@@ -11,13 +11,43 @@
 |
 */
 
+
+// // app/Http/routes.php
+
+// Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+// {
+// 	/** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
+// 	Route::get('/', function()
+// 	{
+// 		return View::make('welcome');
+// 	});
+
+// 	Route::get('/home',function(){
+// 		return View::make('hello');
+// 	});
+// });
+
+/** OTHER PAGES THAT SHOULD NOT BE LOCALIZED **/
+
+// Route::get('locale', function () {
+//   return \App::getLocale();
+// });
+
+Route::get('locale/{locale}', function ($locale) {
+    \Session::put('locale', $locale);
+    return redirect()->back();
+});
+
+	
+Route::view('/hello', 'hello');
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view('hello');
-});
+// Route::get('/home', function () {
+//     return view('hello');
+// });
 
 Route::get('/appartments', function() {
   return view('appartments');

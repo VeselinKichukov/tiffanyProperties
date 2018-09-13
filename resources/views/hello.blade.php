@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
 <head>
     <title>Main</title>
     <meta charset="utf-8">
@@ -83,9 +83,12 @@
     <div>
         <h1><a href="index.html"><img src="{{asset('/images/logo.jpg')}}"/></a></h1>
         <div class="social-icons">
-            <span>Like Us:</span>
+            <span>@lang('home.likeus')</span>
 
-            <a href="index_bg.html" class="language"></a>
+            <!-- <a href="index_bg.html" class="language"></a> -->
+            <a href="locale/en">English</a>
+            <br>
+            <a href="locale/bg">Bulgarian</a>
             
             <a href="#" class="icon-3"></a>
             <a href="#" class="icon-2"></a>
@@ -105,12 +108,12 @@
         </div>
         <nav>
             <ul class="menu">
-                <li class="current"><a href="index.html">Home</a></li>
+                <li class="current"><a href="index.html">@lang('home.home')</a></li>
                 <!-- <li><a href="buying.html">Buyinggg</a></li> -->
-                <li><a href="appartments.html">Apartments</a></li>
+                <li><a href="appartments.html">@lang('home.appartments')</a></li>
                 <!-- <li><a href="renting.html">Renting</a></li> -->
-                <li><a href="checkin.html">Checkin Procedure</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="checkin.html">@lang('home.checkin')</a></li>
+                <li><a href="contacts.html">@lang('home.contacts')</a></li>
             </ul>
         </nav>
     </div>
@@ -119,10 +122,10 @@
 <section id="content">
     <div class="container_12">	
       <div class="grid_8">
-        <h2 class="top-1 p3">Welcome message!</h2>
-        <p class="p2">{{ __('messages.welcome') }} <a href="http://blog.templatemonster.com/free-website-templates/" target="_blank" class="link">free website templates</a> created by TemplateMonster.com team. This website template is optimized for 1280X1024 screen resolution. It is also XHTML &amp; CSS valid.</p>
-        <p class="line-1">Download the basic package of this <a class="link" href="http://blog.templatemonster.com/2012/04/09/free-website-template-real-estate-justslider/" target="_blank" rel="nofollow">Real Estate Template</a> (without PSD source) that is available for anyone without registration. If you need PSD source files, please go to the template download page at TemplateMonster to leave the e-mail address that you want the free template ZIP package to be delivered to.</p>
-        <h2 class="p4">Buyers. Sellers. Proprietors. Agents.</h2>
+        <h2 class="top-1 p3">@lang('home.welcome')</h2>
+        <p class="p2"> @lang('home.welcome_message')</p>
+        <p class="line-1"></p>
+        <h2 class="p4"></h2>
         <div class="wrap block-1">
             <div>
                 <img src="images/page1-img1.jpg" alt="" class="img-border">
