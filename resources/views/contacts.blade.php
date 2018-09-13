@@ -5,7 +5,7 @@
 <head>
     <title>Contacts</title>
     <meta charset="utf-8">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
@@ -121,7 +121,11 @@
             <label><strong>Your Message:</strong>
               <textarea id='message' name='message' placeholder="Your message here." required></textarea>
             </label>
-            <div class="btns"><a href="#" class="button">Clear</a><input type="submit" class="btn btn-primary" value="Send" /></div>
+            <div class="btns">
+              <button type="submit" class="btn btn-primary" value="Send">Send</button>
+              <button type="reset" class="btn btn-light" value="Reset">Clear</button>
+            </div>
+
           </fieldset>
         </form>
       </div>

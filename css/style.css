@@ -6,8 +6,8 @@ body {font:14px/25px Arial,Helvetica,sans-serif;color:#939393;min-width:1264px;b
 /***********************************************************************/
 a {text-decoration:none; cursor:pointer;}
 a:hover {text-decoration:none;}
-a.button {background:#2098f5; font-size:20px; line-height:24px; color:#fff; display:inline-block; padding:5px 23px 5px 23px; }
-a.button:hover {background:#131313; }
+input.button {background:#2098f5; font-size:20px; line-height:24px; color:#fff; display:inline-block; padding:5px 23px 5px 23px; } */
+input.button:hover {background:#131313; } */
 a.link {text-decoration:none; cursor:pointer; color:#2098f5; }
 a.link:hover {text-decoration:underline;}
 .color-1 { color:#fff;}
@@ -20,6 +20,8 @@ ul.list-1 li {padding:0px 0 0px 11px; line-height:25px; background:url(../images
 ul.list-1 li a { font-size:14px; color:#fff; line-height:25px;}
 ul.list-1 li a:hover {color:#2098f5;}
 /******************************************************************/
+button {background:#2098f5; font-size:20px; line-height:24px; color:#fff; display:inline-block; padding:5px 23px 5px 23px; }
+button:hover {background:#131313; }
 .clear {clear:both; line-height:0; font-size:0; width:100%;}
 .wrapper {width:100%; overflow:hidden; position:relative}
 .wrap {overflow:hidden; position:relative}
@@ -113,5 +115,5 @@ dl dd a {}
 #form textarea {background:#131313; font: 14px Arial, Helvetica, sans-serif;color:#535353;height: 246px;outline: medium none;overflow: auto;padding: 7px 0px 0px 10px;width: 610px;resize:none;margin:0px 0 0 0;float:left;}
 #form label {position:relative;overflow:hidden; display: block; padding-bottom:12px;}
 #form label strong {font-weight:normal; display:block; padding-bottom:5px;}
-.btns {text-align:left; width:620px; padding-top:18px;}
-.btns a {display:inline-block; margin:0 20px 0 0px;}
+.btns {text-align:right; width:620px; padding-top:18px;}
+.btns a {display:inline-block; margin:0 80px 0 0px;}
