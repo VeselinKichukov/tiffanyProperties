@@ -9,7 +9,9 @@
         "fideloper/proxy": "^4.4",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
-        "laravelcollective/html": "^6.2"
+        "laravelcollective/html": "^6.2",
+        "symfony/css-selector": "^6.0",
+        "tijsverkoyen/css-to-inline-styles": "^2.2"
     },
     "require-dev": {
         "filp/whoops": "^2.9",
