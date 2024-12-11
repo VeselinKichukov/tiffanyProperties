@@ -1,7 +1,7 @@
 /*--------- slider ---------*/
-#slide { position:relative; overflow:hidden; width:1264px; margin:0 auto; z-index:2;}
+#slide { position:relative; overflow:hidden; width:1264px; margin:0 auto; z-index:2; left: 1%;}
 
-.slider { width:1264px; height:597px; margin:0 auto; position:relative; z-index:2; }
+.slider { width:1264px; height:597px; margin:0 auto; position:relative; z-index:2; left: 11%;}
 .items { display:none;}
 
 .pagination { display:none;}
